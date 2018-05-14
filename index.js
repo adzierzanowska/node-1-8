@@ -16,7 +16,7 @@ server.on('request', function (request, response) {
         response.statusCode = 404;
         fs.readFile('./404.jpg', function(err, data){
             if (err) throw err;
-            console.log("Error");
+            console.log("Error!");
             response.write(data);
             response.end();
         });    
